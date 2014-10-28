@@ -20,6 +20,7 @@
 		EC108C9619FFB0720037A691 /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9519FFB0720037A691 /* QuizData.m */; };
 		EC108C9819FFB07D0037A691 /* quizData.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC108C9719FFB07D0037A691 /* quizData.txt */; };
 		EC108C9B19FFB84D0037A691 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9A19FFB84D0037A691 /* FinalViewController.m */; };
+		ECCA33021A000A1D0046CA42 /* pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33011A000A1D0046CA42 /* pitch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		EC108C9719FFB07D0037A691 /* quizData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizData.txt; sourceTree = "<group>"; };
 		EC108C9919FFB84D0037A691 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
 		EC108C9A19FFB84D0037A691 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
+		ECCA33011A000A1D0046CA42 /* pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		EC108C6219FFAC2A0037A691 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				ECCA33011A000A1D0046CA42 /* pitch.png */,
 				EC108C9319FFB05C0037A691 /* Model */,
 				EC108C8F19FFB04B0037A691 /* DAO */,
 				EC108C6719FFAC2A0037A691 /* AppDelegate.h */,
@@ -109,9 +112,9 @@
 				EC108C6A19FFAC2A0037A691 /* Quiz.xcdatamodeld */,
 				EC108C8C19FFAFE80037A691 /* QuestionViewController.h */,
 				EC108C8D19FFAFE80037A691 /* QuestionViewController.m */,
-				EC108C6319FFAC2A0037A691 /* Supporting Files */,
 				EC108C9919FFB84D0037A691 /* FinalViewController.h */,
 				EC108C9A19FFB84D0037A691 /* FinalViewController.m */,
+				EC108C6319FFAC2A0037A691 /* Supporting Files */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC108C7219FFAC2A0037A691 /* Main.storyboard in Resources */,
+				ECCA33021A000A1D0046CA42 /* pitch.png in Resources */,
 				EC108C9819FFB07D0037A691 /* quizData.txt in Resources */,
 				EC108C7719FFAC2A0037A691 /* LaunchScreen.xib in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,

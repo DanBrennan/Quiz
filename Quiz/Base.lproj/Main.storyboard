@@ -117,7 +117,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="bzv-zJ-Y7k" firstAttribute="height" secondItem="wrC-s4-tIJ" secondAttribute="height" id="034-uv-wbe"/>
                                     <constraint firstItem="GiK-pP-cj6" firstAttribute="leading" secondItem="wrC-s4-tIJ" secondAttribute="leading" id="6qK-iP-TYy"/>
@@ -140,7 +140,7 @@
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3ep-PX-5cg">
                                 <rect key="frame" x="16" y="101" width="568" height="122"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="0jc-7o-B0I"/>
                                 </constraints>
@@ -165,7 +165,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kaF-5D-eIs" firstAttribute="trailing" secondItem="Wfe-RX-Fkg" secondAttribute="trailingMargin" id="0W2-QE-qJL"/>
                             <constraint firstItem="kaF-5D-eIs" firstAttribute="trailing" secondItem="3ep-PX-5cg" secondAttribute="trailing" id="1b1-ac-fgb"/>
@@ -217,14 +217,42 @@
                                     <segue destination="y1X-oh-eoV" kind="showDetail" id="bIe-r3-vdD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-E3-ePv">
+                                <rect key="frame" x="204" y="112" width="193" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="Qcg-iW-qok"/>
+                                    <constraint firstAttribute="height" constant="38" id="abv-ls-TZV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-Wr-BTx">
+                                <rect key="frame" x="180" y="182" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fG8-Ne-Cc6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fMW-RY-XYI" firstAttribute="top" secondItem="ObJ-Yi-9BB" secondAttribute="bottom" constant="174" id="6sm-F3-Ppb"/>
+                            <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="WhS-Wr-BTx" secondAttribute="centerX" id="FtM-fw-wBd"/>
+                            <constraint firstItem="KBX-E3-ePv" firstAttribute="top" secondItem="rGr-on-qWi" secondAttribute="bottom" constant="92" id="JcV-GB-ysH"/>
+                            <constraint firstItem="WhS-Wr-BTx" firstAttribute="top" secondItem="KBX-E3-ePv" secondAttribute="bottom" constant="32" id="NLH-wp-KWx"/>
                             <constraint firstAttribute="centerX" secondItem="ObJ-Yi-9BB" secondAttribute="centerX" constant="-0.5" id="hY3-cG-gsn"/>
+                            <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="ObJ-Yi-9BB" secondAttribute="centerX" id="oYj-N3-V0h"/>
+                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="top" secondItem="WhS-Wr-BTx" secondAttribute="bottom" constant="86" id="swS-AR-hAY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U3M-TN-xaZ"/>
+                    <connections>
+                        <outlet property="correctAnswersLabel" destination="KBX-E3-ePv" id="dqG-27-GVn"/>
+                        <outlet property="messageTextView" destination="WhS-Wr-BTx" id="nXb-80-zQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7N-Dd-2rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

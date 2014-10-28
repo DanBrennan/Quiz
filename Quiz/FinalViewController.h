@@ -10,4 +10,8 @@
 
 @interface FinalViewController : UIViewController
 
+@property (nonatomic) int correctAnswers;
+@property (weak, nonatomic) IBOutlet UILabel *correctAnswersLabel;
+@property (weak, nonatomic) IBOutlet UITextView *messageTextView;
+
 @end

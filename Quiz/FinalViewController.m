@@ -14,9 +14,39 @@
 
 @implementation FinalViewController
 
+@synthesize correctAnswers = _correctAnswers;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.correctAnswersLabel.text = [NSString stringWithFormat:@"%d",self.correctAnswers];
+    
+    
+    switch (self.correctAnswers)
+    {
+        case 0:
+            self.correctAnswersLabel.text = @"0 out of 20";
+            self.messageTextView.text = @"Back to the training pitch for you!";
+            break;
+        case 1:
+            self.correctAnswersLabel.text = @"1 out of 20";
+            self.messageTextView.text = @"Are you really a Manchester United fan!?";
+            break;
+        case 2:
+            self.correctAnswersLabel.text = @"2 out of 20";
+            self.messageTextView.text = @"Guessing doesnt pay";
+            break;
+        case 3:
+            self.correctAnswersLabel.text = @"3 out of 20";
+            self.messageTextView.text = @"Don't be asking for a pay rise!";
+            break;
+        case 4:
+            self.correctAnswersLabel.text = @"4 out of 20";
+            self.messageTextView.text = @"Oh dear! You can do better surely!?";
+            break;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

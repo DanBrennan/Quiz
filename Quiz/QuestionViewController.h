@@ -22,4 +22,5 @@
 @property (strong, nonatomic) NSMutableArray *questions;
 @property (strong, nonatomic) QuizData *quizData;
 
+
 @end
