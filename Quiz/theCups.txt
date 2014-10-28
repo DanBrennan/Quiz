@@ -1,0 +1,3 @@
+How many times have United won the FA Cup?, 11, 17, 13, 9, 11
+How many times have United won the League Cup?, 4, 8, 4, 5, 9
+Which Cup did United win in 1963?, The FA Cup, The League Cup, The European Cup, The FA Cup, The UEFA Cup

@@ -18,9 +18,12 @@
 		EC108C8E19FFAFE80037A691 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C8D19FFAFE80037A691 /* QuestionViewController.m */; };
 		EC108C9219FFB0560037A691 /* ReadData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9119FFB0560037A691 /* ReadData.m */; };
 		EC108C9619FFB0720037A691 /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9519FFB0720037A691 /* QuizData.m */; };
-		EC108C9819FFB07D0037A691 /* quizData.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC108C9719FFB07D0037A691 /* quizData.txt */; };
+		EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC108C9719FFB07D0037A691 /* generalQuiz.txt */; };
 		EC108C9B19FFB84D0037A691 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9A19FFB84D0037A691 /* FinalViewController.m */; };
 		ECCA33021A000A1D0046CA42 /* pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33011A000A1D0046CA42 /* pitch.png */; };
+		ECCA33041A0023760046CA42 /* fergieYears.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33031A0023760046CA42 /* fergieYears.txt */; };
+		ECCA33061A0024800046CA42 /* theCups.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33051A0024800046CA42 /* theCups.txt */; };
+		ECCA33081A00259E0046CA42 /* theLeague.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33071A00259E0046CA42 /* theLeague.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +57,13 @@
 		EC108C9119FFB0560037A691 /* ReadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadData.m; sourceTree = "<group>"; };
 		EC108C9419FFB0720037A691 /* QuizData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizData.h; sourceTree = "<group>"; };
 		EC108C9519FFB0720037A691 /* QuizData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizData.m; sourceTree = "<group>"; };
-		EC108C9719FFB07D0037A691 /* quizData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizData.txt; sourceTree = "<group>"; };
+		EC108C9719FFB07D0037A691 /* generalQuiz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generalQuiz.txt; sourceTree = "<group>"; };
 		EC108C9919FFB84D0037A691 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
 		EC108C9A19FFB84D0037A691 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
 		ECCA33011A000A1D0046CA42 /* pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitch.png; sourceTree = "<group>"; };
+		ECCA33031A0023760046CA42 /* fergieYears.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fergieYears.txt; sourceTree = "<group>"; };
+		ECCA33051A0024800046CA42 /* theCups.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theCups.txt; sourceTree = "<group>"; };
+		ECCA33071A00259E0046CA42 /* theLeague.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theLeague.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +154,10 @@
 		EC108C8F19FFB04B0037A691 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				EC108C9719FFB07D0037A691 /* quizData.txt */,
+				EC108C9719FFB07D0037A691 /* generalQuiz.txt */,
+				ECCA33031A0023760046CA42 /* fergieYears.txt */,
+				ECCA33051A0024800046CA42 /* theCups.txt */,
+				ECCA33071A00259E0046CA42 /* theLeague.txt */,
 				EC108C9019FFB0560037A691 /* ReadData.h */,
 				EC108C9119FFB0560037A691 /* ReadData.m */,
 			);
@@ -245,10 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC108C7219FFAC2A0037A691 /* Main.storyboard in Resources */,
+				ECCA33041A0023760046CA42 /* fergieYears.txt in Resources */,
 				ECCA33021A000A1D0046CA42 /* pitch.png in Resources */,
-				EC108C9819FFB07D0037A691 /* quizData.txt in Resources */,
+				EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */,
 				EC108C7719FFAC2A0037A691 /* LaunchScreen.xib in Resources */,
+				ECCA33061A0024800046CA42 /* theCups.txt in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,
+				ECCA33081A00259E0046CA42 /* theLeague.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

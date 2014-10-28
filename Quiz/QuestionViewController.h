@@ -22,5 +22,7 @@
 @property (strong, nonatomic) NSMutableArray *questions;
 @property (strong, nonatomic) QuizData *quizData;
 
+@property (strong, nonatomic) NSString *category;
+
 
 @end

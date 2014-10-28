@@ -13,10 +13,12 @@
 
 @synthesize quizData = _quizData;
 
-- (NSMutableArray *)getQuizData{
+- (NSMutableArray *)getQuizData:(NSString*)fileName{
+    
+    NSLog(@" file: %@", fileName);
     
     NSError *error;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"quizData" ofType:@"txt"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];
     
     NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     
@@ -34,6 +36,7 @@
         [_quizData addObject:[[QuizData alloc] initWithQuestionName:columns[0] correctAnswer:columns[1] answer1:columns[2] answer2:columns[3] answer3:columns[4] answer4:columns[5]]];
     }
 
+    NSLog(@"Return Quiz Data");
     
     return _quizData;
     

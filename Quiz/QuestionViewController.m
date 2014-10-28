@@ -26,12 +26,13 @@
 
 @synthesize questions = _questions;
 @synthesize quizData = _quizData;
+@synthesize category = _category;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.questions = [[ReadData alloc] getQuizData];
+    self.questions = [[ReadData alloc] getQuizData:_category];
     questionNumber = 0;
     [self loadQuestion];
 }

@@ -10,7 +10,9 @@
 
 @interface MainViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *startQuizButton;
-
+@property (weak, nonatomic) IBOutlet UIButton *generalQuizButton;
+@property (weak, nonatomic) IBOutlet UIButton *fergieYearsButton;
+@property (weak, nonatomic) IBOutlet UIButton *theCupsButton;
+@property (weak, nonatomic) IBOutlet UIButton *theLeagueButton;
 @end
 
