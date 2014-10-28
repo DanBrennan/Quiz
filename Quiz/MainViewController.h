@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  Quiz
 //
 //  Created by Daniel Brennan on 28/10/2014.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *startQuizButton;
 
 @end
 

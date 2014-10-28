@@ -1,0 +1,4 @@
+What year did United first win the European Cup?, 1968, 1986, 1958, 1970, 1968
+What year did United first win the FA Cup?, 1909, 1954, 1909, 1876, 1922
+What year did United first win the League Cup?, 1992, 1987, 1983, 1962, 1992
+What year did United first win the League?, 1908, 1992, 1967, 1908, 1878
