@@ -8,6 +8,7 @@
 
 #import "FinalViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "SavedGameData.h"
 
 @interface FinalViewController ()
 {
@@ -24,17 +25,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // Construct URL to sound file
-    NSString *path = [NSString stringWithFormat:@"%@/laugh.wav", [[NSBundle mainBundle] resourcePath]];
-    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+
     
-    // Create audio player object and initialize with URL to sound
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    [self updateScores];
     
-    self.correctAnswersLabel.text = [NSString stringWithFormat:@"%d",self.correctAnswers];
-    
-    
-    //play a sound for the score?
+    //self.correctAnswersLabel.text = [NSString stringWithFormat:@"%d",self.correctAnswers];
     
     switch (self.correctAnswers)
     {
@@ -134,6 +129,31 @@
     
     [_audioPlayer play];
     
+  
+    
+}
+- (IBAction)playAgainPressed:(id)sender {
+    [_audioPlayer stop];
+}
+
+- (void) updateScores{
+    
+    
+    if (self.correctAnswers > [SavedGameData sharedGameData].highScore){
+        [SavedGameData sharedGameData].highScore = self.correctAnswers;
+    }
+    
+
+    
+    [SavedGameData sharedGameData].totalScore += self.correctAnswers;
+    [SavedGameData sharedGameData].gamesPlayed += 1;
+    [SavedGameData sharedGameData].averageScore = [SavedGameData sharedGameData].totalScore / [SavedGameData sharedGameData].gamesPlayed;
+    
+    self.totalScoreLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].totalScore];
+    self.totalGamesLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].gamesPlayed];
+    self.averageScoreLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].averageScore];
+    self.highScoreLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].highScore];
+
 }
 
 - (void)didReceiveMemoryWarning {

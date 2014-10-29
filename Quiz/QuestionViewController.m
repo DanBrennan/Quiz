@@ -9,6 +9,8 @@
 #import "QuestionViewController.h"
 #import "ReadData.h"
 #import "FinalViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface QuestionViewController ()
 {
@@ -16,13 +18,11 @@
     int correctAnswers;
     BOOL _bannerIsVisible;
     ADBannerView *_adBanner;
+    AVAudioPlayer *_audioPlayer;
+    
 }
 
 @end
-
-//Read file
-//Take 10 random questions from array and put in Quiz Data
-//Final View showing score and asking if play again
 
 @implementation QuestionViewController
 
@@ -33,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self playSound:@"%@/whistle.wav"];
     
     self.questions = [[ReadData alloc] getQuizData:_category];
     questionNumber = 0;
@@ -53,7 +54,7 @@
         self.questionTextView.hidden=YES;
         self.getScoreButton.enabled=YES;
         self.getScoreButton.hidden=NO;
-        //play full time whistle
+        [self playSound:@"%@/whistle.wav"];
     
     }
     else {
@@ -97,7 +98,12 @@
     
     if ([self.answerOneButton.titleLabel.text isEqualToString:self.quizData.correctAnswer]) {
         correctAnswers ++;
+        [self playSound:@"%@/correct.aiff"];
     }
+    else {
+        [self playSound:@"%@/incorrect.aiff"];
+    }
+    
     questionNumber ++;
     [self loadQuestion];
 
@@ -106,7 +112,12 @@
     
     if ([self.answerTwoButton.titleLabel.text isEqualToString:self.quizData.correctAnswer]) {
         correctAnswers ++;
+        [self playSound:@"%@/correct.aiff"];
     }
+    else {
+        [self playSound:@"%@/incorrect.aiff"];
+    }
+    
     questionNumber ++;
     [self loadQuestion];
 
@@ -115,7 +126,12 @@
     
     if ([self.answerThreeButton.titleLabel.text isEqualToString:self.quizData.correctAnswer]) {
         correctAnswers ++;
+        [self playSound:@"%@/correct.aiff"];
     }
+    else {
+        [self playSound:@"%@/incorrect.aiff"];
+    }
+    
     questionNumber ++;
     [self loadQuestion];
 }
@@ -124,7 +140,12 @@
     
     if ([self.answerFourButton.titleLabel.text isEqualToString:self.quizData.correctAnswer]) {
         correctAnswers ++;
+        [self playSound:@"%@/correct.aiff"];
     }
+    else {
+        [self playSound:@"%@/incorrect.aiff"];
+    }
+    
     questionNumber ++;
     [self loadQuestion];
 }
@@ -144,6 +165,19 @@
     FinalViewController *finalViewController = (FinalViewController *)navController.topViewController;
     finalViewController.correctAnswers = correctAnswers;
     
+    
+}
+
+- (void)playSound:(NSString *) soundFile{
+    
+    // Construct URL to sound file
+    NSString *path = [NSString stringWithFormat:soundFile, [[NSBundle mainBundle] resourcePath]];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    // Create audio player object and initialize with URL to sound
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    [_audioPlayer play];
     
 }
 
