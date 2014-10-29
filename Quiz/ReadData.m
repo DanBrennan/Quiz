@@ -38,9 +38,31 @@
 
     NSLog(@"Return Quiz Data");
     
-    return _quizData;
+    [self shuffle];
+    
+    NSMutableArray *returnQuestions = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 15; i++)
+    {
+        [returnQuestions  addObject:self.quizData[i]] ;
+        
+    }
     
     
+    return returnQuestions;
+    
+}
+
+- (void)shuffle
+{
+
+        NSUInteger count = [self.quizData count];
+        for (NSUInteger i = 0; i < count; ++i) {
+            NSInteger nElements = count - i;
+            NSInteger n = (arc4random() % nElements) + i;
+            [self.quizData exchangeObjectAtIndex:i withObjectAtIndex:n];
+        }
+
 }
 
 

@@ -2,3 +2,5 @@ What year did Sir Alex Ferguson begin at United?, 1986, 1985, 1986, 1988, 1990
 How many league titles did Sir Alex Ferguson win at United?, 13, 11, 12, 13, 20
 How many Champions League finals did United reach under Sir Alex Ferguson?, 4, 2, 3, 4, 5
 Who was Sir Alex Fergusons first signing at United?, Viv Anderson, Brian McClair, Peter Davenport, Viv Anderson, Gordon Strachan
+What was the result in Sir Alex Fergusons final game as Manchester United manager?, 5-5, 5-0, 5-1, 5-3, 5-5
+Who were Sir Alex Fergusons final opponents as Manchester United manager?, West Bromwich Albion, Liverpool, Chelsea, Swansea, West Bromwich Albion

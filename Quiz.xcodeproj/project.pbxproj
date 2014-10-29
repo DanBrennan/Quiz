@@ -24,6 +24,10 @@
 		ECCA33041A0023760046CA42 /* fergieYears.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33031A0023760046CA42 /* fergieYears.txt */; };
 		ECCA33061A0024800046CA42 /* theCups.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33051A0024800046CA42 /* theCups.txt */; };
 		ECCA33081A00259E0046CA42 /* theLeague.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33071A00259E0046CA42 /* theLeague.txt */; };
+		ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */; };
+		ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330D1A0108350046CA42 /* crowdgroan.wav */; };
+		ECCA33121A0108350046CA42 /* laugh.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330E1A0108350046CA42 /* laugh.wav */; };
+		ECCA33131A0108350046CA42 /* politecheer.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330F1A0108350046CA42 /* politecheer.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		ECCA33031A0023760046CA42 /* fergieYears.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fergieYears.txt; sourceTree = "<group>"; };
 		ECCA33051A0024800046CA42 /* theCups.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theCups.txt; sourceTree = "<group>"; };
 		ECCA33071A00259E0046CA42 /* theLeague.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theLeague.txt; sourceTree = "<group>"; };
+		ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheeringcrowd.wav; sourceTree = "<group>"; };
+		ECCA330D1A0108350046CA42 /* crowdgroan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crowdgroan.wav; sourceTree = "<group>"; };
+		ECCA330E1A0108350046CA42 /* laugh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laugh.wav; sourceTree = "<group>"; };
+		ECCA330F1A0108350046CA42 /* politecheer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = politecheer.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,9 @@
 		EC108C6219FFAC2A0037A691 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				ECCA33011A000A1D0046CA42 /* pitch.png */,
+				ECCA330B1A0108220046CA42 /* data */,
+				ECCA330A1A0108160046CA42 /* sounds */,
+				ECCA33091A0108080046CA42 /* images */,
 				EC108C9319FFB05C0037A691 /* Model */,
 				EC108C8F19FFB04B0037A691 /* DAO */,
 				EC108C6719FFAC2A0037A691 /* AppDelegate.h */,
@@ -154,10 +164,6 @@
 		EC108C8F19FFB04B0037A691 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				EC108C9719FFB07D0037A691 /* generalQuiz.txt */,
-				ECCA33031A0023760046CA42 /* fergieYears.txt */,
-				ECCA33051A0024800046CA42 /* theCups.txt */,
-				ECCA33071A00259E0046CA42 /* theLeague.txt */,
 				EC108C9019FFB0560037A691 /* ReadData.h */,
 				EC108C9119FFB0560037A691 /* ReadData.m */,
 			);
@@ -171,6 +177,36 @@
 				EC108C9519FFB0720037A691 /* QuizData.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		ECCA33091A0108080046CA42 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA33011A000A1D0046CA42 /* pitch.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		ECCA330A1A0108160046CA42 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA330E1A0108350046CA42 /* laugh.wav */,
+				ECCA330D1A0108350046CA42 /* crowdgroan.wav */,
+				ECCA330F1A0108350046CA42 /* politecheer.wav */,
+				ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		ECCA330B1A0108220046CA42 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EC108C9719FFB07D0037A691 /* generalQuiz.txt */,
+				ECCA33031A0023760046CA42 /* fergieYears.txt */,
+				ECCA33051A0024800046CA42 /* theCups.txt */,
+				ECCA33071A00259E0046CA42 /* theLeague.txt */,
+			);
+			name = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +289,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCA33121A0108350046CA42 /* laugh.wav in Resources */,
 				EC108C7219FFAC2A0037A691 /* Main.storyboard in Resources */,
 				ECCA33041A0023760046CA42 /* fergieYears.txt in Resources */,
+				ECCA33131A0108350046CA42 /* politecheer.wav in Resources */,
+				ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */,
 				ECCA33021A000A1D0046CA42 /* pitch.png in Resources */,
 				EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */,
 				EC108C7719FFAC2A0037A691 /* LaunchScreen.xib in Resources */,
+				ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */,
 				ECCA33061A0024800046CA42 /* theCups.txt in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,
 				ECCA33081A00259E0046CA42 /* theLeague.txt in Resources */,

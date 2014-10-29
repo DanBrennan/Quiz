@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController<ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *generalQuizButton;
 @property (weak, nonatomic) IBOutlet UIButton *fergieYearsButton;

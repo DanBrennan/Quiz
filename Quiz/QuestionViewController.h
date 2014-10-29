@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 #import "QuizData.h"
 
-@interface QuestionViewController : UIViewController
+
+@interface QuestionViewController : UIViewController<ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *questionTextView;
 
