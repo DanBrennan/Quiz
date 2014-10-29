@@ -13,6 +13,8 @@
 @interface FinalViewController ()
 {
     AVAudioPlayer *_audioPlayer;
+    BOOL _bannerIsVisible;
+    ADBannerView *_adBanner;
 }
 
 @end
@@ -148,11 +150,13 @@
     [SavedGameData sharedGameData].totalScore += self.correctAnswers;
     [SavedGameData sharedGameData].gamesPlayed += 1;
     [SavedGameData sharedGameData].averageScore = [SavedGameData sharedGameData].totalScore / [SavedGameData sharedGameData].gamesPlayed;
+
+    self.totalScoreLabel.text = [NSString stringWithFormat:@"Total Score: %ld",[SavedGameData sharedGameData].totalScore];
+    self.totalGamesLabel.text = [NSString stringWithFormat:@"Total Games: %ld",[SavedGameData sharedGameData].gamesPlayed];
+    self.averageScoreLabel.text = [NSString stringWithFormat:@"Average Score: %ld",[SavedGameData sharedGameData].averageScore];
+    self.highScoreLabel.text = [NSString stringWithFormat:@"High Score: %ld",[SavedGameData sharedGameData].highScore];
     
-    self.totalScoreLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].totalScore];
-    self.totalGamesLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].gamesPlayed];
-    self.averageScoreLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].averageScore];
-    self.highScoreLabel.text = [NSString stringWithFormat:@"%ld",[SavedGameData sharedGameData].highScore];
+    [[SavedGameData sharedGameData] save];
 
 }
 
@@ -170,5 +174,62 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - iAds
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    _adBanner = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
+    _adBanner.delegate = self;
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    if (!_bannerIsVisible)
+    {
+        // If banner isn't part of view hierarchy, add it
+        if (_adBanner.superview == nil)
+        {
+            [self.view addSubview:_adBanner];
+        }
+        
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        
+        // Assumes the banner view is just off the bottom of the screen.
+        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+        
+        [UIView commitAnimations];
+        
+        _bannerIsVisible = YES;
+    }
+}
+
+
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    NSLog(@"Failed to retrieve ad");
+    
+    if (_bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        
+        // Assumes the banner view is placed at the bottom of the screen.
+        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+        
+        [UIView commitAnimations];
+        
+        _bannerIsVisible = NO;
+    }
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [_adBanner removeFromSuperview];
+    _adBanner.delegate = nil;
+    _adBanner = nil;
+}
 
 @end

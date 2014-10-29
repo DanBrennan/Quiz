@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SavedGameData : NSObject
+@interface SavedGameData : NSObject <NSCoding>
 
 @property (assign, nonatomic) NSInteger highScore;
 @property (assign, nonatomic) NSInteger averageScore;
@@ -17,6 +17,7 @@
 
 +(instancetype)sharedGameData;
 -(void)reset;
+-(void)save;
 
 @end
 

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface FinalViewController : UIViewController
+@interface FinalViewController : UIViewController<ADBannerViewDelegate>
 
 @property (nonatomic) int correctAnswers;
 @property (weak, nonatomic) IBOutlet UILabel *correctAnswersLabel;
