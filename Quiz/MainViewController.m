@@ -26,7 +26,32 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.levelLabel.text = [NSString stringWithFormat:@"Level: %ld",[SavedGameData sharedGameData].currentLevel];
+    //self.levelLabel.text = [NSString stringWithFormat:@"Level: %ld",[SavedGameData sharedGameData].currentLevel];
+    
+    switch ([SavedGameData sharedGameData].currentLevel)
+    {
+        case 1:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: Trainee"];
+            break;
+        case 2:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: Reserve Player"];
+            break;
+        case 3:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: First Team Player"];
+            break;
+        case 4:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: FA Cup Winner"];
+            break;
+        case 5:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: Premier League Winner"];
+            break;
+        case 6:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: Champions League Winner"];
+            break;
+        default:
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: Trainee"];
+    }
+
 
 }
 
@@ -35,11 +60,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)playPressed:(id)sender {
-    
-    category = @"generalQuiz";
-    
-}
+
+
 
 - (IBAction)resetScoresPressed:(id)sender {
     
@@ -57,7 +79,8 @@
     
     UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
     QuestionViewController *questionViewController = (QuestionViewController *)navController.topViewController;
-    questionViewController.category = category;
+    
+    questionViewController.category = @"generalQuiz";
     //_bannerIsVisible = NO;
     
     

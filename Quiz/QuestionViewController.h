@@ -27,7 +27,6 @@
 @property (strong, nonatomic) QuizData *quizData;
 
 @property (strong, nonatomic) NSString *category;
-@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (nonatomic) float progressValue;
 

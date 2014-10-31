@@ -20,15 +20,12 @@
 		EC108C9619FFB0720037A691 /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9519FFB0720037A691 /* QuizData.m */; };
 		EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC108C9719FFB07D0037A691 /* generalQuiz.txt */; };
 		EC108C9B19FFB84D0037A691 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9A19FFB84D0037A691 /* FinalViewController.m */; };
-		EC7162E71A02BB8800E6FE46 /* ticking.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EC7162E61A02BB8800E6FE46 /* ticking.aiff */; };
 		EC7162EA1A02C36F00E6FE46 /* PlayAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7162E91A02C36F00E6FE46 /* PlayAudio.m */; };
 		EC7162F01A03D1FB00E6FE46 /* Levels.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7162EF1A03D1FB00E6FE46 /* Levels.m */; };
 		EC7162F21A03FCC000E6FE46 /* backgound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F11A03FCC000E6FE46 /* backgound.jpg */; };
 		EC7162F41A0411EC00E6FE46 /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F31A0411EC00E6FE46 /* background.wav */; };
+		EC7162F61A042F0100E6FE46 /* incorrect.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F51A042F0100E6FE46 /* incorrect.aiff */; };
 		ECCA33021A000A1D0046CA42 /* pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33011A000A1D0046CA42 /* pitch.png */; };
-		ECCA33041A0023760046CA42 /* fergieYears.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33031A0023760046CA42 /* fergieYears.txt */; };
-		ECCA33061A0024800046CA42 /* theCups.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33051A0024800046CA42 /* theCups.txt */; };
-		ECCA33081A00259E0046CA42 /* theLeague.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33071A00259E0046CA42 /* theLeague.txt */; };
 		ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */; };
 		ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330D1A0108350046CA42 /* crowdgroan.wav */; };
 		ECCA33121A0108350046CA42 /* laugh.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330E1A0108350046CA42 /* laugh.wav */; };
@@ -36,7 +33,6 @@
 		ECCA33151A0111FA0046CA42 /* whistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33141A0111FA0046CA42 /* whistle.wav */; };
 		ECCA33181A0115180046CA42 /* SavedGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCA33171A0115180046CA42 /* SavedGameData.m */; };
 		ECCA331B1A0130820046CA42 /* correct.aiff in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33191A0130820046CA42 /* correct.aiff */; };
-		ECCA331C1A0130820046CA42 /* incorrect.aiff in Resources */ = {isa = PBXBuildFile; fileRef = ECCA331A1A0130820046CA42 /* incorrect.aiff */; };
 		ECCA33221A013D780046CA42 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33211A013D780046CA42 /* football.png */; };
 		ECCA33241A015E800046CA42 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33231A015E800046CA42 /* icon.png */; };
 		ECCA33301A01A4910046CA42 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA332F1A01A4910046CA42 /* play.png */; };
@@ -77,17 +73,14 @@
 		EC108C9719FFB07D0037A691 /* generalQuiz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generalQuiz.txt; sourceTree = "<group>"; };
 		EC108C9919FFB84D0037A691 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
 		EC108C9A19FFB84D0037A691 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
-		EC7162E61A02BB8800E6FE46 /* ticking.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = ticking.aiff; sourceTree = "<group>"; };
 		EC7162E81A02C36F00E6FE46 /* PlayAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayAudio.h; sourceTree = "<group>"; };
 		EC7162E91A02C36F00E6FE46 /* PlayAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayAudio.m; sourceTree = "<group>"; };
 		EC7162EE1A03D1FB00E6FE46 /* Levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Levels.h; sourceTree = "<group>"; };
 		EC7162EF1A03D1FB00E6FE46 /* Levels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Levels.m; sourceTree = "<group>"; };
 		EC7162F11A03FCC000E6FE46 /* backgound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgound.jpg; sourceTree = "<group>"; };
 		EC7162F31A0411EC00E6FE46 /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		EC7162F51A042F0100E6FE46 /* incorrect.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = incorrect.aiff; sourceTree = "<group>"; };
 		ECCA33011A000A1D0046CA42 /* pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitch.png; sourceTree = "<group>"; };
-		ECCA33031A0023760046CA42 /* fergieYears.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fergieYears.txt; sourceTree = "<group>"; };
-		ECCA33051A0024800046CA42 /* theCups.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theCups.txt; sourceTree = "<group>"; };
-		ECCA33071A00259E0046CA42 /* theLeague.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theLeague.txt; sourceTree = "<group>"; };
 		ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheeringcrowd.wav; sourceTree = "<group>"; };
 		ECCA330D1A0108350046CA42 /* crowdgroan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crowdgroan.wav; sourceTree = "<group>"; };
 		ECCA330E1A0108350046CA42 /* laugh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laugh.wav; sourceTree = "<group>"; };
@@ -96,7 +89,6 @@
 		ECCA33161A0115180046CA42 /* SavedGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedGameData.h; sourceTree = "<group>"; };
 		ECCA33171A0115180046CA42 /* SavedGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedGameData.m; sourceTree = "<group>"; };
 		ECCA33191A0130820046CA42 /* correct.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = correct.aiff; sourceTree = "<group>"; };
-		ECCA331A1A0130820046CA42 /* incorrect.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = incorrect.aiff; sourceTree = "<group>"; };
 		ECCA33211A013D780046CA42 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 		ECCA33231A015E800046CA42 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ECCA332F1A01A4910046CA42 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
@@ -254,10 +246,9 @@
 		ECCA330A1A0108160046CA42 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				EC7162E61A02BB8800E6FE46 /* ticking.aiff */,
+				EC7162F51A042F0100E6FE46 /* incorrect.aiff */,
 				EC7162F31A0411EC00E6FE46 /* background.wav */,
 				ECCA33191A0130820046CA42 /* correct.aiff */,
-				ECCA331A1A0130820046CA42 /* incorrect.aiff */,
 				ECCA33141A0111FA0046CA42 /* whistle.wav */,
 				ECCA330E1A0108350046CA42 /* laugh.wav */,
 				ECCA330D1A0108350046CA42 /* crowdgroan.wav */,
@@ -271,9 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				EC108C9719FFB07D0037A691 /* generalQuiz.txt */,
-				ECCA33031A0023760046CA42 /* fergieYears.txt */,
-				ECCA33051A0024800046CA42 /* theCups.txt */,
-				ECCA33071A00259E0046CA42 /* theLeague.txt */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -327,6 +315,7 @@
 				TargetAttributes = {
 					EC108C5F19FFAC2A0037A691 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = BRG7A7732T;
 					};
 					EC108C7B19FFAC2A0037A691 = {
 						CreatedOnToolsVersion = 6.1;
@@ -334,7 +323,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC108C5B19FFAC2A0037A691 /* Build configuration list for PBXProject "Quiz" */;
+			buildConfigurationList = EC108C5B19FFAC2A0037A691 /* Build configuration list for PBXProject "Manchester United Quiz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -362,24 +351,20 @@
 				EC108C7219FFAC2A0037A691 /* Main.storyboard in Resources */,
 				EC7162F21A03FCC000E6FE46 /* backgound.jpg in Resources */,
 				ECCA33221A013D780046CA42 /* football.png in Resources */,
-				ECCA33041A0023760046CA42 /* fergieYears.txt in Resources */,
 				ECCA33131A0108350046CA42 /* politecheer.wav in Resources */,
 				ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */,
-				EC7162E71A02BB8800E6FE46 /* ticking.aiff in Resources */,
 				EC7162F41A0411EC00E6FE46 /* background.wav in Resources */,
 				ECCA33321A01AD150046CA42 /* answerButton.png in Resources */,
 				ECCA33021A000A1D0046CA42 /* pitch.png in Resources */,
+				EC7162F61A042F0100E6FE46 /* incorrect.aiff in Resources */,
 				EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */,
 				ECCA33301A01A4910046CA42 /* play.png in Resources */,
-				ECCA331C1A0130820046CA42 /* incorrect.aiff in Resources */,
 				EC108C7719FFAC2A0037A691 /* LaunchScreen.xib in Resources */,
 				ECCA331B1A0130820046CA42 /* correct.aiff in Resources */,
 				ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */,
 				ECCA33241A015E800046CA42 /* icon.png in Resources */,
-				ECCA33061A0024800046CA42 /* theCups.txt in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,
 				ECCA33151A0111FA0046CA42 /* whistle.wav in Resources */,
-				ECCA33081A00259E0046CA42 /* theLeague.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -541,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -586,7 +573,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC108C5B19FFAC2A0037A691 /* Build configuration list for PBXProject "Quiz" */ = {
+		EC108C5B19FFAC2A0037A691 /* Build configuration list for PBXProject "Manchester United Quiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC108C8419FFAC2A0037A691 /* Debug */,

@@ -30,7 +30,7 @@
 
 @synthesize questions = _questions;
 @synthesize quizData = _quizData;
-@synthesize category = _category;
+//@synthesize category = _category;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,6 +50,7 @@
     
     [self playSound:@"%@/whistle.wav"];
     
+    NSLog(@"Filename %@", self.category);
     
     self.questions = [[ReadData alloc] getQuizData:_category];
     questionNumber = 0;
@@ -59,36 +60,31 @@
 - (void)timerCount{
     
     if (countdownNumber != 0){
-        //self.timerLabel.text = [NSString stringWithFormat:@"%i", countdownNumber];
         countdownNumber = countdownNumber - 1;
-        self.progressView.progress = self.progressView.progress + 0.1429;
-
+        self.progressView.progress = self.progressView.progress + 1.0/7;
     }
     else{
+        [self playSound:@"%@/incorrect.aiff"];
         [Timer invalidate];
         [self questionTransition];
-
     }
-    
-
-
     
     
 }
 
 - (void) questionTransition{
-    
-   // [_ticking stop];
+ 
     questionNumber ++;
+
     [self loadQuestion];
     
 }
 
 - (void)loadQuestion {
     
-    NSLog(@"LoadQuestion %d", questionNumber);
-    NSLog(@"TotalQuestions %lu", (unsigned long)self.questions.count);
-    
+//    NSLog(@"LoadQuestion %d", questionNumber);
+//    NSLog(@"TotalQuestions %lu", (unsigned long)self.questions.count);
+   
     if (questionNumber >= self.questions.count) {
 
         [Timer invalidate];
@@ -99,7 +95,6 @@
         self.answerThreeButton.hidden=YES;
         self.answerFourButton.hidden=YES;
         self.questionTextView.hidden=YES;
-        self.timerLabel.hidden=YES;
         self.progressView.hidden=YES;
         
         self.getScoreButton.enabled=YES;
@@ -110,12 +105,12 @@
     }
     else {
         
+
         self.progressView.progress = 0.0;
         
         
         [Timer invalidate];
         countdownNumber = 7;
-        //[_ticking play];
         Timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerCount) userInfo:nil repeats:YES];
         
         self.quizData = [self.questions objectAtIndex:questionNumber];

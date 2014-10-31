@@ -59,7 +59,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="K7R-EY-wda"/>
                                     <segue destination="ocJ-fP-23h" kind="showDetail" id="yhe-59-aTH"/>
                                 </connections>
                             </button>
@@ -213,15 +212,6 @@
                                     <segue destination="j1j-um-avU" kind="showDetail" id="R5u-vr-sTc"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-HP-QTO">
-                                <rect key="frame" x="279" y="43" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="I2o-Ww-JEJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QHJ-Mb-Ynq" userLabel="Progress View">
                                 <rect key="frame" x="46" y="241" width="509" height="3"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -232,8 +222,6 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WpD-HP-QTO" firstAttribute="centerX" secondItem="3ep-PX-5cg" secondAttribute="centerX" id="1Ql-ud-l9L"/>
-                            <constraint firstItem="WpD-HP-QTO" firstAttribute="top" secondItem="oqo-R3-JqW" secondAttribute="bottom" constant="23" id="9cJ-Hf-U78"/>
                             <constraint firstItem="3ep-PX-5cg" firstAttribute="top" secondItem="oqo-R3-JqW" secondAttribute="bottom" constant="81" id="BV9-kU-XPz"/>
                             <constraint firstItem="kaF-5D-eIs" firstAttribute="trailing" secondItem="Wfe-RX-Fkg" secondAttribute="trailingMargin" id="Bmf-rd-oPx"/>
                             <constraint firstItem="RnZ-7h-4mD" firstAttribute="top" secondItem="kaF-5D-eIs" secondAttribute="bottom" constant="103" id="CmX-jK-jpb"/>
@@ -268,7 +256,6 @@
                         <outlet property="getScoreButton" destination="BKk-k9-dXg" id="6SF-Fs-60o"/>
                         <outlet property="progressView" destination="QHJ-Mb-Ynq" id="bkD-1E-8vy"/>
                         <outlet property="questionTextView" destination="3ep-PX-5cg" id="grR-b2-Rap"/>
-                        <outlet property="timerLabel" destination="WpD-HP-QTO" id="MFw-2l-vNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Me-lg-rgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -475,6 +462,6 @@
         <image name="play.png" width="153" height="153"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zhz-SW-LFP"/>
+        <segue reference="yhe-59-aTH"/>
     </inferredMetricsTieBreakers>
 </document>
