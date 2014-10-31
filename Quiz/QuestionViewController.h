@@ -12,7 +12,9 @@
 
 
 @interface QuestionViewController : UIViewController<ADBannerViewDelegate>
-
+{
+    NSTimer *Timer;
+}
 @property (weak, nonatomic) IBOutlet UITextView *questionTextView;
 
 @property (weak, nonatomic) IBOutlet UIButton *answerOneButton;
@@ -25,6 +27,7 @@
 @property (strong, nonatomic) QuizData *quizData;
 
 @property (strong, nonatomic) NSString *category;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 
 
 @end

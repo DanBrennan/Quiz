@@ -11,9 +11,9 @@
 
 @interface MainViewController : UIViewController<ADBannerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *generalQuizButton;
-@property (weak, nonatomic) IBOutlet UIButton *fergieYearsButton;
-@property (weak, nonatomic) IBOutlet UIButton *theCupsButton;
-@property (weak, nonatomic) IBOutlet UIButton *theLeagueButton;
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
+@property (weak, nonatomic) IBOutlet UIButton *resetScores;
+
 @end
 

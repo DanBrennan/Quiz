@@ -141,6 +141,14 @@
 - (void) updateScores{
     
     
+    //passed level?
+    //
+    
+    if ([[SavedGameData sharedGameData] passedLevel:self.correctAnswers]){
+        
+    };
+    
+    
     if (self.correctAnswers > [SavedGameData sharedGameData].highScore){
         [SavedGameData sharedGameData].highScore = self.correctAnswers;
     }

@@ -16,9 +16,11 @@
 {
     int questionNumber;
     int correctAnswers;
+    int countdownNumber;
     BOOL _bannerIsVisible;
     ADBannerView *_adBanner;
     AVAudioPlayer *_audioPlayer;
+    AVAudioPlayer *_ticking;
     
 }
 
@@ -33,11 +35,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Construct URL to ticking sound file
+    NSString *path = [NSString stringWithFormat:@"%@/ticking.aiff", [[NSBundle mainBundle] resourcePath]];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    // Create audio player object and initialize with URL to sound
+    _ticking = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    
+    
     [self playSound:@"%@/whistle.wav"];
+    
     
     self.questions = [[ReadData alloc] getQuizData:_category];
     questionNumber = 0;
     [self loadQuestion];
+}
+
+- (void)timerCount{
+    
+    if (countdownNumber != 0){
+        self.timerLabel.text = [NSString stringWithFormat:@"%i", countdownNumber];
+        countdownNumber = countdownNumber - 1;
+
+    }
+    else{
+        [Timer invalidate];
+        [self questionTransition];
+
+    }
+    
+
+
+    
+    
+}
+
+- (void) questionTransition{
+    
+    [_ticking stop];
+    questionNumber ++;
+    [self loadQuestion];
+    
 }
 
 - (void)loadQuestion {
@@ -47,6 +87,7 @@
     
     if (questionNumber >= self.questions.count) {
 
+        
         self.answerOneButton.hidden=YES;
         self.answerTwoButton.hidden=YES;
         self.answerThreeButton.hidden=YES;
@@ -58,6 +99,11 @@
     
     }
     else {
+        
+        [Timer invalidate];
+        countdownNumber = 7;
+        [_ticking play];
+        Timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerCount) userInfo:nil repeats:YES];
         
         self.quizData = [self.questions objectAtIndex:questionNumber];
         
@@ -77,6 +123,9 @@
         [self.answerTwoButton setTitle:self.quizData.answer2 forState:(UIControlStateNormal)];
         [self.answerThreeButton setTitle:self.quizData.answer3 forState:(UIControlStateNormal)];
         [self.answerFourButton setTitle:self.quizData.answer4 forState:(UIControlStateNormal)];
+        
+
+        
 
     }
     
@@ -104,8 +153,7 @@
         [self playSound:@"%@/incorrect.aiff"];
     }
     
-    questionNumber ++;
-    [self loadQuestion];
+    [self questionTransition];
 
 }
 - (IBAction)answerTwoPressed:(id)sender {
@@ -118,8 +166,7 @@
         [self playSound:@"%@/incorrect.aiff"];
     }
     
-    questionNumber ++;
-    [self loadQuestion];
+    [self questionTransition];
 
 }
 - (IBAction)answerThreePressed:(id)sender {
@@ -132,8 +179,7 @@
         [self playSound:@"%@/incorrect.aiff"];
     }
     
-    questionNumber ++;
-    [self loadQuestion];
+    [self questionTransition];
 }
 
 - (IBAction)answerFourPressed:(id)sender {
@@ -146,8 +192,7 @@
         [self playSound:@"%@/incorrect.aiff"];
     }
     
-    questionNumber ++;
-    [self loadQuestion];
+    [self questionTransition];
 }
 
 - (IBAction)getScorePressed:(id)sender {
@@ -180,6 +225,8 @@
     [_audioPlayer play];
     
 }
+
+
 
 #pragma mark - iAds
 

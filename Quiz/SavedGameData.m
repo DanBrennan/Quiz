@@ -14,6 +14,8 @@ static NSString* const SSGameDataHighScoreKey = @"highScore";
 static NSString* const SSGameDataAverageScoreKey = @"averageScore";
 static NSString* const SSGameDataTotalScoreKey = @"totalScore";
 static NSString* const SSGameDataGamesPlayedKey = @"gamesPlayed";
+//static NSString* const SSGameDataLevels = @"levels";
+static NSString* const SSGameDataCurrentLevel = @"currentLevel";
 
 
 - (void)encodeWithCoder:(NSCoder *)encoder
@@ -75,12 +77,44 @@ static NSString* const SSGameDataGamesPlayedKey = @"gamesPlayed";
     return sharedInstance;
 }
 
+-(BOOL)passedLevel:(NSInteger*)score{
+    
+    if (score > 9){
+        self.currentLevel = self.currentLevel + 1;
+        return YES;
+    }
+    else{
+        return NO;
+    }
+    
+}
+
+//-(void)incrementLevel:(NSInteger)level{
+//    
+//    self.currentLevel.number = self.currentLevel.number +1;
+//    
+//}
+//
+//-(BOOL)passedLevel:(NSInteger*)score{
+//    
+//    //check if game completed, if not increment level too
+//    
+//    if (score > self.currentLevel.passScore){
+//        return YES;
+//    }
+//    else{
+//        return NO;
+//    }
+//    
+//}
+
 -(void)reset
 {
     self.highScore = 0;
     self.averageScore = 0;
     self.totalScore = 0;
     self.gamesPlayed = 0;
+    self.currentLevel = 1;
     
 }
 

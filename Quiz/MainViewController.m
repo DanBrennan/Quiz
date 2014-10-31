@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "QuestionViewController.h"
+#import "SavedGameData.h"
 
 @interface MainViewController ()
 {
@@ -24,6 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.levelLabel.text = [NSString stringWithFormat:@"Level: %ld",[SavedGameData sharedGameData].currentLevel];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,29 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)generalPressed:(id)sender {
+- (IBAction)playPressed:(id)sender {
     
     category = @"generalQuiz";
     
 }
 
-- (IBAction)fergiePressed:(id)sender {
-   
-    category = @"fergieYears";
+- (IBAction)resetScoresPressed:(id)sender {
+    
+    [[SavedGameData sharedGameData] reset];
     
 }
 
-- (IBAction)cupsPressed:(id)sender {
-    
-    category = @"theCups";
-
-}
-
-- (IBAction)leaguePressed:(id)sender {
-    
-    category = @"theLeague";
-
-}
 
 #pragma mark - Navigation
 
