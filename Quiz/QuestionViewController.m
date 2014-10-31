@@ -37,11 +37,14 @@
     // Do any additional setup after loading the view.
     
     // Construct URL to ticking sound file
-    NSString *path = [NSString stringWithFormat:@"%@/ticking.aiff", [[NSBundle mainBundle] resourcePath]];
+    NSString *path = [NSString stringWithFormat:@"%@/background.wav", [[NSBundle mainBundle] resourcePath]];
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     
     // Create audio player object and initialize with URL to sound
     _ticking = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    _ticking.numberOfLoops = -1;
+    [_ticking play];
     
     
     
@@ -56,8 +59,9 @@
 - (void)timerCount{
     
     if (countdownNumber != 0){
-        self.timerLabel.text = [NSString stringWithFormat:@"%i", countdownNumber];
+        //self.timerLabel.text = [NSString stringWithFormat:@"%i", countdownNumber];
         countdownNumber = countdownNumber - 1;
+        self.progressView.progress = self.progressView.progress + 0.1429;
 
     }
     else{
@@ -74,7 +78,7 @@
 
 - (void) questionTransition{
     
-    [_ticking stop];
+   // [_ticking stop];
     questionNumber ++;
     [self loadQuestion];
     
@@ -87,22 +91,31 @@
     
     if (questionNumber >= self.questions.count) {
 
-        
+        [Timer invalidate];
+        self.quizData = nil;
+        self.questions = nil;
         self.answerOneButton.hidden=YES;
         self.answerTwoButton.hidden=YES;
         self.answerThreeButton.hidden=YES;
         self.answerFourButton.hidden=YES;
         self.questionTextView.hidden=YES;
+        self.timerLabel.hidden=YES;
+        self.progressView.hidden=YES;
+        
         self.getScoreButton.enabled=YES;
         self.getScoreButton.hidden=NO;
+        [_ticking stop];
         [self playSound:@"%@/whistle.wav"];
     
     }
     else {
         
+        self.progressView.progress = 0.0;
+        
+        
         [Timer invalidate];
         countdownNumber = 7;
-        [_ticking play];
+        //[_ticking play];
         Timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerCount) userInfo:nil repeats:YES];
         
         self.quizData = [self.questions objectAtIndex:questionNumber];
