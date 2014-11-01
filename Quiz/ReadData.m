@@ -8,17 +8,19 @@
 
 #import "ReadData.h"
 #import "QuizData.h"
+#import "SavedGameData.h"
 
 @implementation ReadData
 
 @synthesize quizData = _quizData;
 
-- (NSMutableArray *)getQuizData:(NSString*)fileName{
+- (NSMutableArray *)getQuizData{
     
-    NSLog(@" file: %@", fileName);
+    NSString *filename = [NSString stringWithFormat:@"level%ld",[SavedGameData sharedGameData].currentLevel];
+    NSLog(@" filename: %@", filename);
     
     NSError *error;
-    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:filename ofType:@"txt"];
     
     NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     
@@ -32,11 +34,11 @@
     
     for (NSString *row in rows){
         NSArray* columns = [row componentsSeparatedByString:@","];
+        NSLog(@" row: %@", row);
         
         [_quizData addObject:[[QuizData alloc] initWithQuestionName:columns[0] correctAnswer:columns[1] answer1:columns[2] answer2:columns[3] answer3:columns[4] answer4:columns[5]]];
     }
 
-    NSLog(@"Return Quiz Data");
     
     [self shuffle];
     

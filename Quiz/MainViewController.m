@@ -30,26 +30,26 @@
     
     switch ([SavedGameData sharedGameData].currentLevel)
     {
-        case 1:
+        case 0:
             self.levelLabel.text = [NSString stringWithFormat:@"Status: Trainee"];
             break;
-        case 2:
+        case 1:
             self.levelLabel.text = [NSString stringWithFormat:@"Status: Reserve Player"];
             break;
-        case 3:
+        case 2:
             self.levelLabel.text = [NSString stringWithFormat:@"Status: First Team Player"];
             break;
-        case 4:
+        case 3:
             self.levelLabel.text = [NSString stringWithFormat:@"Status: FA Cup Winner"];
             break;
-        case 5:
+        case 4:
             self.levelLabel.text = [NSString stringWithFormat:@"Status: Premier League Winner"];
             break;
-        case 6:
+        case 5:
             self.levelLabel.text = [NSString stringWithFormat:@"Status: Champions League Winner"];
             break;
         default:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: Trainee"];
+            self.levelLabel.text = [NSString stringWithFormat:@"Status: Unknown"];
     }
 
 

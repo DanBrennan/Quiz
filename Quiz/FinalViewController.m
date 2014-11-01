@@ -143,10 +143,10 @@
     
     //passed level?
     //
-    
-    if ([[SavedGameData sharedGameData] passedLevel:self.correctAnswers]){
-        
-    };
+//    
+//    if ([[SavedGameData sharedGameData] passedLevel:self.correctAnswers]){
+//        
+//    };
     
     
     if (self.correctAnswers > [SavedGameData sharedGameData].highScore){
@@ -154,12 +154,15 @@
     }
     
 
+    if (self.correctAnswers > 10){
+        [SavedGameData sharedGameData].currentLevel += 1;
+    }
     
     [SavedGameData sharedGameData].totalScore += self.correctAnswers;
     [SavedGameData sharedGameData].gamesPlayed += 1;
     [SavedGameData sharedGameData].averageScore = [SavedGameData sharedGameData].totalScore / [SavedGameData sharedGameData].gamesPlayed;
 
-    self.totalScoreLabel.text = [NSString stringWithFormat:@"Total Score: %ld",[SavedGameData sharedGameData].totalScore];
+    self.totalScoreLabel.text = [NSString stringWithFormat:@"Level: %ld",[SavedGameData sharedGameData].currentLevel+1];
     self.totalGamesLabel.text = [NSString stringWithFormat:@"Total Games: %ld",[SavedGameData sharedGameData].gamesPlayed];
     self.averageScoreLabel.text = [NSString stringWithFormat:@"Average Score: %ld",[SavedGameData sharedGameData].averageScore];
     self.highScoreLabel.text = [NSString stringWithFormat:@"High Score: %ld",[SavedGameData sharedGameData].highScore];

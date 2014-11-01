@@ -18,13 +18,16 @@
 		EC108C8E19FFAFE80037A691 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C8D19FFAFE80037A691 /* QuestionViewController.m */; };
 		EC108C9219FFB0560037A691 /* ReadData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9119FFB0560037A691 /* ReadData.m */; };
 		EC108C9619FFB0720037A691 /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9519FFB0720037A691 /* QuizData.m */; };
-		EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC108C9719FFB07D0037A691 /* generalQuiz.txt */; };
+		EC108C9819FFB07D0037A691 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC108C9719FFB07D0037A691 /* level1.txt */; };
 		EC108C9B19FFB84D0037A691 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC108C9A19FFB84D0037A691 /* FinalViewController.m */; };
 		EC7162EA1A02C36F00E6FE46 /* PlayAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7162E91A02C36F00E6FE46 /* PlayAudio.m */; };
 		EC7162F01A03D1FB00E6FE46 /* Levels.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7162EF1A03D1FB00E6FE46 /* Levels.m */; };
 		EC7162F21A03FCC000E6FE46 /* backgound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F11A03FCC000E6FE46 /* backgound.jpg */; };
 		EC7162F41A0411EC00E6FE46 /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F31A0411EC00E6FE46 /* background.wav */; };
 		EC7162F61A042F0100E6FE46 /* incorrect.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F51A042F0100E6FE46 /* incorrect.aiff */; };
+		EC7162F81A0447F600E6FE46 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F71A0447F600E6FE46 /* icon.png */; };
+		EC7162FA1A053F6E00E6FE46 /* level0.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F91A053F6E00E6FE46 /* level0.txt */; };
+		EC7162FC1A05469D00E6FE46 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC7162FB1A05469D00E6FE46 /* level2.txt */; };
 		ECCA33021A000A1D0046CA42 /* pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33011A000A1D0046CA42 /* pitch.png */; };
 		ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */; };
 		ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330D1A0108350046CA42 /* crowdgroan.wav */; };
@@ -34,7 +37,6 @@
 		ECCA33181A0115180046CA42 /* SavedGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCA33171A0115180046CA42 /* SavedGameData.m */; };
 		ECCA331B1A0130820046CA42 /* correct.aiff in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33191A0130820046CA42 /* correct.aiff */; };
 		ECCA33221A013D780046CA42 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33211A013D780046CA42 /* football.png */; };
-		ECCA33241A015E800046CA42 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33231A015E800046CA42 /* icon.png */; };
 		ECCA33301A01A4910046CA42 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA332F1A01A4910046CA42 /* play.png */; };
 		ECCA33321A01AD150046CA42 /* answerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33311A01AD150046CA42 /* answerButton.png */; };
 /* End PBXBuildFile section */
@@ -70,7 +72,7 @@
 		EC108C9119FFB0560037A691 /* ReadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadData.m; sourceTree = "<group>"; };
 		EC108C9419FFB0720037A691 /* QuizData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizData.h; sourceTree = "<group>"; };
 		EC108C9519FFB0720037A691 /* QuizData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizData.m; sourceTree = "<group>"; };
-		EC108C9719FFB07D0037A691 /* generalQuiz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generalQuiz.txt; sourceTree = "<group>"; };
+		EC108C9719FFB07D0037A691 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		EC108C9919FFB84D0037A691 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
 		EC108C9A19FFB84D0037A691 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
 		EC7162E81A02C36F00E6FE46 /* PlayAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayAudio.h; sourceTree = "<group>"; };
@@ -80,6 +82,9 @@
 		EC7162F11A03FCC000E6FE46 /* backgound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgound.jpg; sourceTree = "<group>"; };
 		EC7162F31A0411EC00E6FE46 /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
 		EC7162F51A042F0100E6FE46 /* incorrect.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = incorrect.aiff; sourceTree = "<group>"; };
+		EC7162F71A0447F600E6FE46 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		EC7162F91A053F6E00E6FE46 /* level0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level0.txt; sourceTree = "<group>"; };
+		EC7162FB1A05469D00E6FE46 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		ECCA33011A000A1D0046CA42 /* pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitch.png; sourceTree = "<group>"; };
 		ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheeringcrowd.wav; sourceTree = "<group>"; };
 		ECCA330D1A0108350046CA42 /* crowdgroan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crowdgroan.wav; sourceTree = "<group>"; };
@@ -90,7 +95,6 @@
 		ECCA33171A0115180046CA42 /* SavedGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedGameData.m; sourceTree = "<group>"; };
 		ECCA33191A0130820046CA42 /* correct.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = correct.aiff; sourceTree = "<group>"; };
 		ECCA33211A013D780046CA42 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
-		ECCA33231A015E800046CA42 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ECCA332F1A01A4910046CA42 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		ECCA33311A01AD150046CA42 /* answerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answerButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,9 +238,9 @@
 			children = (
 				EC7162F11A03FCC000E6FE46 /* backgound.jpg */,
 				ECCA332F1A01A4910046CA42 /* play.png */,
+				EC7162F71A0447F600E6FE46 /* icon.png */,
 				ECCA33311A01AD150046CA42 /* answerButton.png */,
 				EC108C7319FFAC2A0037A691 /* Images.xcassets */,
-				ECCA33231A015E800046CA42 /* icon.png */,
 				ECCA33211A013D780046CA42 /* football.png */,
 				ECCA33011A000A1D0046CA42 /* pitch.png */,
 			);
@@ -261,7 +265,9 @@
 		ECCA330B1A0108220046CA42 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				EC108C9719FFB07D0037A691 /* generalQuiz.txt */,
+				EC108C9719FFB07D0037A691 /* level1.txt */,
+				EC7162FB1A05469D00E6FE46 /* level2.txt */,
+				EC7162F91A053F6E00E6FE46 /* level0.txt */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 			files = (
 				ECCA33121A0108350046CA42 /* laugh.wav in Resources */,
 				EC108C7219FFAC2A0037A691 /* Main.storyboard in Resources */,
+				EC7162F81A0447F600E6FE46 /* icon.png in Resources */,
 				EC7162F21A03FCC000E6FE46 /* backgound.jpg in Resources */,
 				ECCA33221A013D780046CA42 /* football.png in Resources */,
 				ECCA33131A0108350046CA42 /* politecheer.wav in Resources */,
@@ -356,14 +363,15 @@
 				EC7162F41A0411EC00E6FE46 /* background.wav in Resources */,
 				ECCA33321A01AD150046CA42 /* answerButton.png in Resources */,
 				ECCA33021A000A1D0046CA42 /* pitch.png in Resources */,
+				EC7162FC1A05469D00E6FE46 /* level2.txt in Resources */,
 				EC7162F61A042F0100E6FE46 /* incorrect.aiff in Resources */,
-				EC108C9819FFB07D0037A691 /* generalQuiz.txt in Resources */,
+				EC108C9819FFB07D0037A691 /* level1.txt in Resources */,
 				ECCA33301A01A4910046CA42 /* play.png in Resources */,
 				EC108C7719FFAC2A0037A691 /* LaunchScreen.xib in Resources */,
 				ECCA331B1A0130820046CA42 /* correct.aiff in Resources */,
 				ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */,
-				ECCA33241A015E800046CA42 /* icon.png in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,
+				EC7162FA1A053F6E00E6FE46 /* level0.txt in Resources */,
 				ECCA33151A0111FA0046CA42 /* whistle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

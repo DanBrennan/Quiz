@@ -50,9 +50,7 @@
     
     [self playSound:@"%@/whistle.wav"];
     
-    NSLog(@"Filename %@", self.category);
-    
-    self.questions = [[ReadData alloc] getQuizData:_category];
+    self.questions = [[ReadData alloc] getQuizData];
     questionNumber = 0;
     [self loadQuestion];
 }

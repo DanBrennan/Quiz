@@ -13,6 +13,6 @@
 @property (nonatomic) NSMutableArray *quizData;
 
 //pass in file name for various quizes
--(NSMutableArray *)getQuizData:(NSString*)fileName;
+-(NSMutableArray *)getQuizData;
 
 @end
