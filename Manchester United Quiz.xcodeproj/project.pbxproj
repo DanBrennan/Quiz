@@ -39,6 +39,16 @@
 		ECCA33221A013D780046CA42 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33211A013D780046CA42 /* football.png */; };
 		ECCA33301A01A4910046CA42 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA332F1A01A4910046CA42 /* play.png */; };
 		ECCA33321A01AD150046CA42 /* answerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33311A01AD150046CA42 /* answerButton.png */; };
+		ECF7B2271A1CB17000FEC870 /* level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B2261A1CB17000FEC870 /* level3.txt */; };
+		ECF7B2291A1CB1D600FEC870 /* level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B2281A1CB1D600FEC870 /* level4.txt */; };
+		ECF7B22B1A1CB1E600FEC870 /* level5.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B22A1A1CB1E600FEC870 /* level5.txt */; };
+		ECF7B22D1A1CBB7200FEC870 /* pitchspotlight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B22C1A1CBB7200FEC870 /* pitchspotlight.jpg */; };
+		ECF7B2311A1CBFAD00FEC870 /* field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B2301A1CBFAD00FEC870 /* field.jpg */; };
+		ECF7B2331A1CC05500FEC870 /* nightpitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B2321A1CC05500FEC870 /* nightpitch.jpg */; };
+		ECF7B2351A1CD28300FEC870 /* football_soccer_ball.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B2341A1CD28300FEC870 /* football_soccer_ball.png */; };
+		ECF7B2371A1CD3EA00FEC870 /* footballButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B2361A1CD3EA00FEC870 /* footballButton.png */; };
+		ECF7B23B1A1CE0BE00FEC870 /* fulltimeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B23A1A1CE0BE00FEC870 /* fulltimeButton.png */; };
+		ECF7B23D1A1CF44200FEC870 /* ribbon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF7B23C1A1CF44200FEC870 /* ribbon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +107,16 @@
 		ECCA33211A013D780046CA42 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 		ECCA332F1A01A4910046CA42 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		ECCA33311A01AD150046CA42 /* answerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answerButton.png; sourceTree = "<group>"; };
+		ECF7B2261A1CB17000FEC870 /* level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level3.txt; sourceTree = "<group>"; };
+		ECF7B2281A1CB1D600FEC870 /* level4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level4.txt; sourceTree = "<group>"; };
+		ECF7B22A1A1CB1E600FEC870 /* level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level5.txt; sourceTree = "<group>"; };
+		ECF7B22C1A1CBB7200FEC870 /* pitchspotlight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pitchspotlight.jpg; sourceTree = "<group>"; };
+		ECF7B2301A1CBFAD00FEC870 /* field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = field.jpg; sourceTree = "<group>"; };
+		ECF7B2321A1CC05500FEC870 /* nightpitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nightpitch.jpg; sourceTree = "<group>"; };
+		ECF7B2341A1CD28300FEC870 /* football_soccer_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_soccer_ball.png; sourceTree = "<group>"; };
+		ECF7B2361A1CD3EA00FEC870 /* footballButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footballButton.png; sourceTree = "<group>"; };
+		ECF7B23A1A1CE0BE00FEC870 /* fulltimeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fulltimeButton.png; sourceTree = "<group>"; };
+		ECF7B23C1A1CF44200FEC870 /* ribbon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ribbon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,9 +257,16 @@
 			isa = PBXGroup;
 			children = (
 				EC7162F11A03FCC000E6FE46 /* backgound.jpg */,
+				ECF7B23C1A1CF44200FEC870 /* ribbon.png */,
+				ECF7B2321A1CC05500FEC870 /* nightpitch.jpg */,
+				ECF7B2301A1CBFAD00FEC870 /* field.jpg */,
+				ECF7B2341A1CD28300FEC870 /* football_soccer_ball.png */,
+				ECF7B23A1A1CE0BE00FEC870 /* fulltimeButton.png */,
 				ECCA332F1A01A4910046CA42 /* play.png */,
+				ECF7B22C1A1CBB7200FEC870 /* pitchspotlight.jpg */,
 				EC7162F71A0447F600E6FE46 /* icon.png */,
 				ECCA33311A01AD150046CA42 /* answerButton.png */,
+				ECF7B2361A1CD3EA00FEC870 /* footballButton.png */,
 				EC108C7319FFAC2A0037A691 /* Images.xcassets */,
 				ECCA33211A013D780046CA42 /* football.png */,
 				ECCA33011A000A1D0046CA42 /* pitch.png */,
@@ -265,9 +292,12 @@
 		ECCA330B1A0108220046CA42 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				EC7162F91A053F6E00E6FE46 /* level0.txt */,
 				EC108C9719FFB07D0037A691 /* level1.txt */,
 				EC7162FB1A05469D00E6FE46 /* level2.txt */,
-				EC7162F91A053F6E00E6FE46 /* level0.txt */,
+				ECF7B2261A1CB17000FEC870 /* level3.txt */,
+				ECF7B2281A1CB1D600FEC870 /* level4.txt */,
+				ECF7B22A1A1CB1E600FEC870 /* level5.txt */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -354,23 +384,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCA33121A0108350046CA42 /* laugh.wav in Resources */,
+				ECF7B2311A1CBFAD00FEC870 /* field.jpg in Resources */,
 				EC108C7219FFAC2A0037A691 /* Main.storyboard in Resources */,
 				EC7162F81A0447F600E6FE46 /* icon.png in Resources */,
 				EC7162F21A03FCC000E6FE46 /* backgound.jpg in Resources */,
 				ECCA33221A013D780046CA42 /* football.png in Resources */,
 				ECCA33131A0108350046CA42 /* politecheer.wav in Resources */,
 				ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */,
+				ECF7B2351A1CD28300FEC870 /* football_soccer_ball.png in Resources */,
+				ECF7B23D1A1CF44200FEC870 /* ribbon.png in Resources */,
+				ECF7B2271A1CB17000FEC870 /* level3.txt in Resources */,
 				EC7162F41A0411EC00E6FE46 /* background.wav in Resources */,
 				ECCA33321A01AD150046CA42 /* answerButton.png in Resources */,
 				ECCA33021A000A1D0046CA42 /* pitch.png in Resources */,
 				EC7162FC1A05469D00E6FE46 /* level2.txt in Resources */,
 				EC7162F61A042F0100E6FE46 /* incorrect.aiff in Resources */,
 				EC108C9819FFB07D0037A691 /* level1.txt in Resources */,
+				ECF7B2371A1CD3EA00FEC870 /* footballButton.png in Resources */,
 				ECCA33301A01A4910046CA42 /* play.png in Resources */,
+				ECF7B22D1A1CBB7200FEC870 /* pitchspotlight.jpg in Resources */,
 				EC108C7719FFAC2A0037A691 /* LaunchScreen.xib in Resources */,
+				ECF7B2291A1CB1D600FEC870 /* level4.txt in Resources */,
 				ECCA331B1A0130820046CA42 /* correct.aiff in Resources */,
+				ECF7B23B1A1CE0BE00FEC870 /* fulltimeButton.png in Resources */,
 				ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,
+				ECF7B22B1A1CB1E600FEC870 /* level5.txt in Resources */,
+				ECF7B2331A1CC05500FEC870 /* nightpitch.jpg in Resources */,
 				EC7162FA1A053F6E00E6FE46 /* level0.txt in Resources */,
 				ECCA33151A0111FA0046CA42 /* whistle.wav in Resources */,
 			);

@@ -97,6 +97,7 @@
         
         self.getScoreButton.enabled=YES;
         self.getScoreButton.hidden=NO;
+        [self.getScoreButton setTitle:@"Get Full-time Score!" forState:(UIControlStateNormal)];
         [_ticking stop];
         [self playSound:@"%@/whistle.wav"];
     

@@ -28,29 +28,43 @@
     
     //self.levelLabel.text = [NSString stringWithFormat:@"Level: %ld",[SavedGameData sharedGameData].currentLevel];
     
+    CABasicAnimation *theAnimation;
+    
+    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    theAnimation.duration=1.0;
+    theAnimation.repeatCount=HUGE_VALF;
+    theAnimation.autoreverses=YES;
+    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+    [self.playButton.layer addAnimation:theAnimation forKey:@"animateOpacity"]; //myButton.layer instead of
+    
+    
+    
     switch ([SavedGameData sharedGameData].currentLevel)
     {
         case 0:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: Trainee"];
+            self.levelLabel.text = [NSString stringWithFormat:@"Trainee"];
             break;
         case 1:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: Reserve Player"];
+            self.levelLabel.text = [NSString stringWithFormat:@"Reserve Team Player"];
             break;
         case 2:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: First Team Player"];
+            self.levelLabel.text = [NSString stringWithFormat:@"First Team Player"];
             break;
         case 3:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: FA Cup Winner"];
+            self.levelLabel.text = [NSString stringWithFormat:@"FA Cup Winner"];
             break;
         case 4:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: Premier League Winner"];
+            self.levelLabel.text = [NSString stringWithFormat:@"Premier League Winner"];
             break;
         case 5:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: Champions League Winner"];
+            self.levelLabel.text = [NSString stringWithFormat:@"Champions League Winner"];
             break;
         default:
-            self.levelLabel.text = [NSString stringWithFormat:@"Status: Unknown"];
+            self.levelLabel.text = [NSString stringWithFormat:@""];
     }
+    
+   // self.levelLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ribbon.png"]];
 
 
 }

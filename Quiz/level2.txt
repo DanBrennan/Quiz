@@ -1,3 +1,36 @@
+What year did United first win the FA Cup?,1909,1954,1909,1876,1922
+What year did United first win the League Cup?,1992,1987,1983,1962,1992
+What year did United first win the League?,1908,1992,1967,1908,1886
+What year did Sir Alex Ferguson begin at United?,1986,1985,1986,1988,1990
+How many league titles did Sir Alex Ferguson win at United?,13,11,12,13,20
+How many Champions League finals did United reach under Sir Alex Ferguson?,4,2,3,4,5
+Who was Sir Alex Fergusons first signing at United?,Viv Anderson,Brian McClair,Peter Davenport,Viv Anderson,Paul Ince
+What was the result in Sir Alex Fergusons final game as Manchester United manager?,5-5,5-5,5-1,5-3,5-2
+Who were Sir Alex Fergusons final opponents as Manchester United manager?,West Brom,Liverpool,Chelsea,West Brom,Swansea
+How many times have United won the FA Cup?,11,17,13,9,11
+How many times have United won the League Cup?,4,8,4,5,9
+Which Cup did United win in 1963?,FA Cup,League Cup,European Cup,FA Cup,UEFA Cup
+How many times have United won the League?,20,11,17,18,20
+Who scored the winner in the 1999 Champions League Final?,Solskjaer,Solskjaer,Sheringham,Beckham,Giggs
+What number did Ryan Giggs wear for United?,11,7,9,10,11
+What were Manchester United originally called?,Newton Heath,Manchester Rovers,Manchester Atletic,Railway Men,Newton Heath
+Who did United sign Eric Cantona from?,Leeds United,Marseille,Sheffield Wednesday,AC Milan,Leeds United
+Which year in the 70s were United relegated from the First Divison?,1974,1975,1973,1974,1979
+Uniteds record 10-0 victory was against?,Anderlecht,Burnley,Anderlecht,Benfica,Exeter
+What year did United win their first Double?,1994,1990,1994,1965,1952
+Who scored the winning goal in the 1990 FA Cup Final?,Lee Martin,Neil Webb,Danny Wallace,Lee Martin,Steve Bruce
+What colour kit did United wear in the 1968 European Cup Final?,Blue,Blue,White,Red,Black
+Who did United beat in the 1991 European Cup Winners Cup Final?,Barcelona,Real Madrid,Barcelona,Valenica,Juventus
+Who has scored the most hatricks for United?,Denis Law,Denis Law,George Best,Ronaldo,Van Nistelrooy
+How many times have United won the European Cup?,3,4,2,3,5
+Who has not played for United?,John Barnes,John Barnes,Peter Beardsley,Garth Crooks,Andy Goram
+Who did United beat to win the Intercontinental Cup in 2001?,Palmeiras,Inependiente,Palmeiras,Juventus,Inter Milan
+Who is the longest serving captain in Uniteds history?,Robson,Robson,Keane,Charlton,G Neville
+Who did George Best make his United debut against?,West Brom,West Ham,West Brom,Chelsea,Burnley
+Who scored a penalty in Uniteds 1983 FA Cup win?,Arnold Muhren,Ray Wilkins,Frank Stapelton,Alan Davies,Arnold Muhren
+Who scored the winning goal in Uniteds 1992 League Cup win?,Brian McClair,Brian McClair,Lee Sharpe,Mark Hughes,Mike Phelan
+How many goals did Henrik Larsson score for United?,3,2,1,3,4
+How many team trophies did Ryan Giggs win at United (including Charity Shields)?,34,27,29,31,34
 What year did United first win the European Cup?,1968,1986,1958,1970,1968
 What year was Manchester United formed?,1878,1889,1878,1892,1899
 Who scored the only goal in the 1985 FA Cup Final win?,Whiteside,Hughes,Moran,Whiteside,Robson
