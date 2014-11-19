@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *averageScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalGamesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalScoreLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
 
 @end

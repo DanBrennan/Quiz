@@ -16,8 +16,18 @@
 
 - (NSMutableArray *)getQuizData{
     
-    NSString *filename = [NSString stringWithFormat:@"level%ld",[SavedGameData sharedGameData].currentLevel];
+    NSString *filename;
+    
+    if ([SavedGameData sharedGameData].currentLevel <= 5){
+         filename = [NSString stringWithFormat:@"level%ld",[SavedGameData sharedGameData].currentLevel];
+    }
+    else {
+        filename = @"level5";
+    }
+    
     NSLog(@" filename: %@", filename);
+    
+
     
     NSError *error;
     NSString *path = [[NSBundle mainBundle] pathForResource:filename ofType:@"txt"];

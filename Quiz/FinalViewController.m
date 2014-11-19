@@ -31,87 +31,97 @@
     
     [self updateScores];
     
+    CABasicAnimation *theAnimation;
+    
+    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    theAnimation.duration=1.0;
+    theAnimation.repeatCount=HUGE_VALF;
+    theAnimation.autoreverses=YES;
+    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+    [self.playAgainButton.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+    
     //self.correctAnswersLabel.text = [NSString stringWithFormat:@"%d",self.correctAnswers];
     
     switch (self.correctAnswers)
     {
         case 0:
-            self.correctAnswersLabel.text = @"0 out of 15";
+            self.correctAnswersLabel.text = @"0 / 15";
             self.messageTextView.text = @"Are you really a Manchester United fan!?";
-            [self playSound:@"%@/laugh.wav"];
+            [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 1:
-            self.correctAnswersLabel.text = @"1 out of 15";
+            self.correctAnswersLabel.text = @"1 / 15";
             self.messageTextView.text = @"Fergie turns the hair dryer on you!";
-            [self playSound:@"%@/laugh.wav"];
+            [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 2:
-            self.correctAnswersLabel.text = @"2 out of 15";
+            self.correctAnswersLabel.text = @"2 / 15";
             self.messageTextView.text = @"Did you just guess?  I'd expect a City fan to score more than 2!";
-            [self playSound:@"%@/laugh.wav"];
+            [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 3:
-            self.correctAnswersLabel.text = @"3 out of 15";
+            self.correctAnswersLabel.text = @"3 / 15";
             self.messageTextView.text = @"Don't be asking for a pay rise!";
-            [self playSound:@"%@/laugh.wav"];
+            [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 4:
-            self.correctAnswersLabel.text = @"4 out of 15";
+            self.correctAnswersLabel.text = @"4 / 15";
             self.messageTextView.text = @"Back to the training pitch for you!";
             [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 5:
-            self.correctAnswersLabel.text = @"5 out of 15";
+            self.correctAnswersLabel.text = @"5 / 15";
             self.messageTextView.text = @"Is this too hard for you?  Time for some research";
             [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 6:
-            self.correctAnswersLabel.text = @"6 out of 15";
+            self.correctAnswersLabel.text = @"6 / 15";
             self.messageTextView.text = @"Come on - you can do better than that!!";
             [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 7:
-            self.correctAnswersLabel.text = @"7 out of 15";
+            self.correctAnswersLabel.text = @"7 / 15";
             self.messageTextView.text = @"Hmmmm.  I believe you can get 10 if you try a bit harder";
             [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 8:
-            self.correctAnswersLabel.text = @"8 out of 15";
+            self.correctAnswersLabel.text = @"8 / 15";
             self.messageTextView.text = @"Not a bad attempt, but if you don't improve, United might sell you";
-            [self playSound:@"%@/politecheer.wav"];
+            [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 9:
-            self.correctAnswersLabel.text = @"9 out of 15";
+            self.correctAnswersLabel.text = @"9 / 15";
             self.messageTextView.text = @"Encouraging signs.  I predict a bright future if you put some more effort in";
-            [self playSound:@"%@/politecheer.wav"];
+            [self playSound:@"%@/crowdgroan.wav"];
             break;
         case 10:
-            self.correctAnswersLabel.text = @"10 out of 15";
+            self.correctAnswersLabel.text = @"10 / 15";
             self.messageTextView.text = @"Well played.  Not quite Man of the match today, but a great performance";
-            [self playSound:@"%@/politecheer.wav"];
+            [self playSound:@"%@/cheeringcrowd.wav"];
             break;
         case 11:
-            self.correctAnswersLabel.text = @"11 out of 15";
+            self.correctAnswersLabel.text = @"11 / 15";
             self.messageTextView.text = @"Excellent score.  But with some extra training you could be the best!";
-            [self playSound:@"%@/politecheer.wav"];
+            [self playSound:@"%@/cheeringcrowd.wav"];
             break;
         case 12:
-            self.correctAnswersLabel.text = @"12 out of 15";
+            self.correctAnswersLabel.text = @"12 / 15";
             self.messageTextView.text = @"You know your stuff.  A true Manchester United fan.";
-            [self playSound:@"%@/politecheer.wav"];
+            [self playSound:@"%@/cheeringcrowd.wav"];
             break;
         case 13:
-            self.correctAnswersLabel.text = @"13 out of 15";
+            self.correctAnswersLabel.text = @"13 / 15";
             self.messageTextView.text = @"Champions League qualification easily secured.  Congratulations";
             [self playSound:@"%@/cheeringcrowd.wav"];
             break;
         case 14:
-            self.correctAnswersLabel.text = @"14 out of 15";
+            self.correctAnswersLabel.text = @"14 / 15";
             self.messageTextView.text = @"Almost perfection!  United would sign you up!";
             [self playSound:@"%@/cheeringcrowd.wav"];
             break;
         case 15:
-            self.correctAnswersLabel.text = @"15 out of 15";
+            self.correctAnswersLabel.text = @"15 / 15";
             self.messageTextView.text = @"And Solsjaker has won it!!  Bring on the Treble.  Number 1 United fan!";
             [self playSound:@"%@/cheeringcrowd.wav"];
             break;

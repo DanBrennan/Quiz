@@ -269,13 +269,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="example" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-Wr-BTx">
-                                <rect key="frame" x="71" y="125" width="326" height="103"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-Jr-xGx">
                                 <rect key="frame" x="257" y="486" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
@@ -308,19 +301,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-E3-ePv">
-                                <rect key="frame" x="204" y="79" width="193" height="38"/>
+                                <rect key="frame" x="204" y="36" width="193" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="3cq-7P-BVE"/>
-                                    <constraint firstAttribute="height" constant="38" id="XLa-Ti-oxU"/>
+                                    <constraint firstAttribute="height" constant="38" id="IgK-ZO-4TV"/>
+                                    <constraint firstAttribute="width" constant="193" id="e9X-Cb-MLY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObJ-Yi-9BB">
-                                <rect key="frame" x="235" y="243" width="131" height="114"/>
+                                <rect key="frame" x="255" y="171" width="90" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="qme-CE-cs4"/>
+                                    <constraint firstAttribute="height" constant="86" id="Lye-re-zEe"/>
+                                    <constraint firstAttribute="width" constant="90" id="olF-UP-O4R"/>
                                 </constraints>
                                 <state key="normal" title="Play Again" image="footballButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,40 +324,46 @@
                                     <segue destination="ocJ-fP-23h" kind="showDetail" id="Zhz-SW-LFP"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="example" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-Wr-BTx">
+                                <rect key="frame" x="71" y="71" width="326" height="92"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KBX-E3-ePv" firstAttribute="trailing" secondItem="WhS-Wr-BTx" secondAttribute="trailing" id="0ER-bB-nrt"/>
+                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="centerX" secondItem="KBX-E3-ePv" secondAttribute="centerX" id="0cL-04-Od2"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="top" secondItem="YKZ-E8-vUc" secondAttribute="bottom" constant="8" symbolic="YES" id="2j5-qM-yFg"/>
+                            <constraint firstItem="WhS-Wr-BTx" firstAttribute="top" secondItem="rGr-on-qWi" secondAttribute="bottom" constant="51" id="30w-B0-5Am"/>
                             <constraint firstItem="YKZ-E8-vUc" firstAttribute="top" secondItem="rUL-gb-aa1" secondAttribute="bottom" constant="8" symbolic="YES" id="39f-wP-0Ts"/>
+                            <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="YKZ-E8-vUc" secondAttribute="centerX" id="4V8-Pu-unZ"/>
                             <constraint firstItem="LDm-Jr-xGx" firstAttribute="top" secondItem="0MT-D7-0hc" secondAttribute="bottom" constant="8" symbolic="YES" id="86q-FO-FCN"/>
                             <constraint firstItem="uGs-Su-Wte" firstAttribute="leading" secondItem="8GT-yl-3zl" secondAttribute="leading" id="8iu-9Q-JMI"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="leading" secondItem="YKZ-E8-vUc" secondAttribute="leading" id="8jR-Sp-1Bq"/>
                             <constraint firstItem="WhS-Wr-BTx" firstAttribute="leading" secondItem="8GT-yl-3zl" secondAttribute="leadingMargin" constant="55" id="AGK-Ka-fcj"/>
-                            <constraint firstItem="rUL-gb-aa1" firstAttribute="top" secondItem="ObJ-Yi-9BB" secondAttribute="bottom" constant="42" id="DC9-9x-exO"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="trailing" secondItem="LDm-Jr-xGx" secondAttribute="trailing" id="DoF-PU-3Pr"/>
                             <constraint firstAttribute="bottom" secondItem="0MT-D7-0hc" secondAttribute="bottom" constant="122" id="Hqx-fn-2w3"/>
                             <constraint firstItem="fMW-RY-XYI" firstAttribute="top" secondItem="LDm-Jr-xGx" secondAttribute="bottom" constant="93" id="Ji8-fX-2dh"/>
                             <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="YKZ-E8-vUc" secondAttribute="centerX" id="KSw-uQ-Hfn"/>
                             <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="uGs-Su-Wte" secondAttribute="centerX" id="KvO-ht-uOj"/>
                             <constraint firstItem="uGs-Su-Wte" firstAttribute="top" secondItem="8GT-yl-3zl" secondAttribute="top" id="Ne3-sn-oUz"/>
-                            <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="YKZ-E8-vUc" secondAttribute="centerX" id="Oqt-dy-0eW"/>
-                            <constraint firstItem="WhS-Wr-BTx" firstAttribute="top" secondItem="KBX-E3-ePv" secondAttribute="bottom" constant="8" symbolic="YES" id="Oyo-JK-fSb"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="leading" secondItem="LDm-Jr-xGx" secondAttribute="leading" id="T15-Rs-vy1"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="centerX" secondItem="8GT-yl-3zl" secondAttribute="centerX" id="XMt-r9-n9s"/>
                             <constraint firstAttribute="bottom" secondItem="rUL-gb-aa1" secondAttribute="bottom" constant="180" id="Y4S-P0-PVH"/>
-                            <constraint firstItem="KBX-E3-ePv" firstAttribute="centerX" secondItem="rUL-gb-aa1" secondAttribute="centerX" id="bLZ-oI-2f8"/>
-                            <constraint firstItem="KBX-E3-ePv" firstAttribute="top" secondItem="rGr-on-qWi" secondAttribute="bottom" constant="59" id="bUg-xD-nFY"/>
-                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="centerY" secondItem="uGs-Su-Wte" secondAttribute="centerY" id="bv7-xd-GJ8"/>
+                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="top" secondItem="WhS-Wr-BTx" secondAttribute="bottom" constant="8" symbolic="YES" id="c3z-f0-B39"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uGs-Su-Wte" secondAttribute="trailing" constant="-5" id="cFT-HU-Xdx"/>
-                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="top" secondItem="WhS-Wr-BTx" secondAttribute="bottom" constant="15" id="dvo-90-kYH"/>
-                            <constraint firstItem="WhS-Wr-BTx" firstAttribute="trailing" secondItem="KBX-E3-ePv" secondAttribute="trailing" id="fLa-el-pUp"/>
+                            <constraint firstItem="KBX-E3-ePv" firstAttribute="top" secondItem="rGr-on-qWi" secondAttribute="bottom" constant="16" id="cLQ-Ou-qus"/>
+                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="centerX" secondItem="rUL-gb-aa1" secondAttribute="centerX" id="eJV-wl-3B7"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="trailing" secondItem="YKZ-E8-vUc" secondAttribute="trailing" id="kBn-kP-aBK"/>
                             <constraint firstItem="0MT-D7-0hc" firstAttribute="leading" secondItem="rUL-gb-aa1" secondAttribute="leading" id="kXq-62-87w"/>
                             <constraint firstItem="uGs-Su-Wte" firstAttribute="bottom" secondItem="fMW-RY-XYI" secondAttribute="top" id="mZg-YK-Jdb"/>
                             <constraint firstItem="uGs-Su-Wte" firstAttribute="centerX" secondItem="rUL-gb-aa1" secondAttribute="centerX" id="pn2-GJ-9Ff"/>
                             <constraint firstItem="uGs-Su-Wte" firstAttribute="leading" secondItem="WhS-Wr-BTx" secondAttribute="trailing" constant="-450" id="rZI-EQ-rBB"/>
                             <constraint firstItem="WhS-Wr-BTx" firstAttribute="leading" secondItem="8GT-yl-3zl" secondAttribute="leading" constant="136" id="tFf-KB-NqS"/>
-                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="centerX" secondItem="rUL-gb-aa1" secondAttribute="centerX" id="xI2-tw-4ks"/>
+                            <constraint firstItem="ObJ-Yi-9BB" firstAttribute="top" secondItem="8GT-yl-3zl" secondAttribute="top" constant="171" id="vHX-QT-7Sn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -381,6 +381,7 @@
                         <outlet property="correctAnswersLabel" destination="KBX-E3-ePv" id="dqG-27-GVn"/>
                         <outlet property="highScoreLabel" destination="rUL-gb-aa1" id="RYC-5u-GoU"/>
                         <outlet property="messageTextView" destination="WhS-Wr-BTx" id="nXb-80-zQ8"/>
+                        <outlet property="playAgainButton" destination="ObJ-Yi-9BB" id="Nov-zx-cSd"/>
                         <outlet property="totalGamesLabel" destination="0MT-D7-0hc" id="UUN-aL-0Wo"/>
                         <outlet property="totalScoreLabel" destination="LDm-Jr-xGx" id="4dv-do-Cih"/>
                     </connections>
@@ -454,6 +455,6 @@
         <image name="nightpitch.jpg" width="417" height="411"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yhe-59-aTH"/>
+        <segue reference="Zhz-SW-LFP"/>
     </inferredMetricsTieBreakers>
 </document>

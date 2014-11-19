@@ -36,7 +36,7 @@
     theAnimation.autoreverses=YES;
     theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
     theAnimation.toValue=[NSNumber numberWithFloat:0.0];
-    [self.playButton.layer addAnimation:theAnimation forKey:@"animateOpacity"]; //myButton.layer instead of
+    [self.playButton.layer addAnimation:theAnimation forKey:@"animateOpacity"]; 
     
     
     
@@ -64,7 +64,7 @@
             self.levelLabel.text = [NSString stringWithFormat:@""];
     }
     
-   // self.levelLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ribbon.png"]];
+    self.levelLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ribbon.png"]];
 
 
 }
