@@ -28,16 +28,7 @@
     
     //self.levelLabel.text = [NSString stringWithFormat:@"Level: %ld",[SavedGameData sharedGameData].currentLevel];
     
-    CABasicAnimation *theAnimation;
-    
-    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    theAnimation.duration=1.0;
-    theAnimation.repeatCount=HUGE_VALF;
-    theAnimation.autoreverses=YES;
-    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
-    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
-    [self.playButton.layer addAnimation:theAnimation forKey:@"animateOpacity"]; 
-    
+    [self animateButton];
     
     
     switch ([SavedGameData sharedGameData].currentLevel)
@@ -66,6 +57,11 @@
     
     self.levelLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ribbon.png"]];
 
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
+
+    
 
 }
 
@@ -74,13 +70,43 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)appDidEnterForeground:(NSNotification *)notification {
+    
+    [self animateButton];
 
+    
+    NSLog(@"did enter foreground notification");
+}
 
+- (void)appDidBecomeActive:(NSNotification *)notification {
+    
+    [self animateButton];
+   
+    NSLog(@"did become active notification");
+}
+
+- (void)animateButton{
+    
+    CABasicAnimation *theAnimation;
+    
+    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    theAnimation.duration=1.0;
+    theAnimation.repeatCount=HUGE_VALF;
+    theAnimation.autoreverses=YES;
+    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+    [self.playButton.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+
+}
 
 - (IBAction)resetScoresPressed:(id)sender {
     
     [[SavedGameData sharedGameData] reset];
     
+}
+
+-(void)deallocNotification {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
@@ -96,6 +122,8 @@
     
     questionViewController.category = @"generalQuiz";
     //_bannerIsVisible = NO;
+    
+    [self deallocNotification];
     
     
 }

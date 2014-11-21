@@ -27,19 +27,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
     
     [self updateScores];
     
-    CABasicAnimation *theAnimation;
-    
-    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    theAnimation.duration=1.0;
-    theAnimation.repeatCount=HUGE_VALF;
-    theAnimation.autoreverses=YES;
-    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
-    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
-    [self.playAgainButton.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+    [self animateButton];
     
     //self.correctAnswersLabel.text = [NSString stringWithFormat:@"%d",self.correctAnswers];
     
@@ -144,8 +137,41 @@
   
     
 }
+
+-(void)deallocNotification {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+
 - (IBAction)playAgainPressed:(id)sender {
     [_audioPlayer stop];
+    [self deallocNotification];
+}
+
+- (void)appDidEnterForeground:(NSNotification *)notification {
+    
+    [self animateButton];
+
+}
+
+- (void)appDidBecomeActive:(NSNotification *)notification {
+    
+    [self animateButton];
+
+}
+
+- (void)animateButton{
+    
+    CABasicAnimation *theAnimation;
+    
+    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    theAnimation.duration=1.0;
+    theAnimation.repeatCount=HUGE_VALF;
+    theAnimation.autoreverses=YES;
+    theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+    theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+    [self.playAgainButton.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+    
 }
 
 - (void) updateScores{
