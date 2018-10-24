@@ -28,6 +28,7 @@
 		EC7162F81A0447F600E6FE46 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F71A0447F600E6FE46 /* icon.png */; };
 		EC7162FA1A053F6E00E6FE46 /* level0.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC7162F91A053F6E00E6FE46 /* level0.txt */; };
 		EC7162FC1A05469D00E6FE46 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC7162FB1A05469D00E6FE46 /* level2.txt */; };
+		ECB308D02180D61E00574B29 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECB308CF2180D61E00574B29 /* Readme.txt */; };
 		ECCA33021A000A1D0046CA42 /* pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCA33011A000A1D0046CA42 /* pitch.png */; };
 		ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */; };
 		ECCA33111A0108350046CA42 /* crowdgroan.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCA330D1A0108350046CA42 /* crowdgroan.wav */; };
@@ -95,6 +96,7 @@
 		EC7162F71A0447F600E6FE46 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		EC7162F91A053F6E00E6FE46 /* level0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level0.txt; sourceTree = "<group>"; };
 		EC7162FB1A05469D00E6FE46 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		ECB308CF2180D61E00574B29 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		ECCA33011A000A1D0046CA42 /* pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitch.png; sourceTree = "<group>"; };
 		ECCA330C1A0108350046CA42 /* cheeringcrowd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheeringcrowd.wav; sourceTree = "<group>"; };
 		ECCA330D1A0108350046CA42 /* crowdgroan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crowdgroan.wav; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		EC108C5719FFAC2A0037A691 = {
 			isa = PBXGroup;
 			children = (
+				ECB308CF2180D61E00574B29 /* Readme.txt */,
 				EC108C6219FFAC2A0037A691 /* Quiz */,
 				EC108C7F19FFAC2A0037A691 /* QuizTests */,
 				EC108C6119FFAC2A0037A691 /* Products */,
@@ -409,6 +412,7 @@
 				ECF7B23B1A1CE0BE00FEC870 /* fulltimeButton.png in Resources */,
 				ECCA33101A0108350046CA42 /* cheeringcrowd.wav in Resources */,
 				EC108C7419FFAC2A0037A691 /* Images.xcassets in Resources */,
+				ECB308D02180D61E00574B29 /* Readme.txt in Resources */,
 				ECF7B22B1A1CB1E600FEC870 /* level5.txt in Resources */,
 				ECF7B2331A1CC05500FEC870 /* nightpitch.jpg in Resources */,
 				EC7162FA1A053F6E00E6FE46 /* level0.txt in Resources */,
